@@ -1,4 +1,4 @@
-name: dining_app
+name: dining_app_design_2
 description: A new Flutter application.
 
 # The following defines the version and build number for your application.
@@ -23,9 +23,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  flutter_redux: ^0.5.3
-  intl: ^0.16.0
-  shared_preferences: ^0.5.3+4
 
 dev_dependencies:
   flutter_test:
@@ -33,7 +30,7 @@ dev_dependencies:
 
 
 # For information on the generic Dart part of this file, see the
-# following page: https://www.dartlang.org/tools/pub/pubspec
+# following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:

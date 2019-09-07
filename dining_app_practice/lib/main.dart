@@ -4,23 +4,24 @@ import 'Navigation.dart';
 import 'hall1.dart';
 import 'hall2.dart';
 import 'hall3.dart';
-void main() => runApp(MyApp());
+import 'home_widget.dart';
+void main() => runApp(Home());
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Dining App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
-    );
-  }
-}
+//class MyApp extends StatelessWidget {
+//  // This widget is the root of your application.
+//  @override
+//  Widget build(BuildContext context) {
+//    return MaterialApp(
+//      title: 'Dining App',
+////      theme: ThemeData(
+////        primarySwatch: Colors.blue,
+////      ),
+//      home: Home(),
+//    );
+//  }
+//}
 
-class MyHomePage extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,23 +40,23 @@ class MyHomePage extends StatelessWidget {
   }
 
 
-//  @override
-//  _MyHomePageState createState() => _MyHomePageState();
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
-//class _MyHomePageState extends State<MyHomePage> {
-//
-//  List<Widget> halls = [hall1(), hall2(), hall3()];
-//
-//  @override
-//  Widget build(BuildContext context) {
-//    return PageView.builder(
-//      itemBuilder: (context, position) {
-//        position=position%3;
-//        return halls[position];
-//      },
-//    );
-//  }
-//}
+class _MyHomePageState extends State<MyHomePage> {
+
+  List<Widget> halls = [hall1(), hall2(), hall3()];
+
+  @override
+  Widget build(BuildContext context) {
+    return PageView.builder(
+      itemBuilder: (context, position) {
+        position=position%3;
+        return halls[position];
+      },
+    );
+  }
+}
 
 
